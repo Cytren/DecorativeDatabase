@@ -1,0 +1,35 @@
+{
+  "name": "decorative-database",
+  "version": "1.0.0",
+  "description": "Decorative Database for TypeScript",
+  "private": true,
+  "main": "build/main/index.js",
+  "types": "build/main/index.d.ts",
+  "scripts": {
+    "watch": "node node_modules/gulp/bin/gulp watch",
+    "clean": "node node_modules/gulp/bin/gulp clean",
+    "build": "node node_modules/gulp/bin/gulp build",
+    "package": "node node_modules/gulp/bin/gulp package",
+    "test": "node node_modules/gulp/bin/gulp build && node node_modules/mocha/bin/mocha build/test/test.js"
+  },
+  "keywords": [
+    "decorative-database",
+    "decorative",
+    "decorator",
+    "database"
+  ],
+  "author": "Cytren",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/chai": "^4.0.1",
+    "@types/mocha": "^2.2.41",
+    "chai": "^4.1.0",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-json-editor": "^2.2.1",
+    "gulp-sequence": "^0.4.6",
+    "gulp-typescript": "^3.2.1",
+    "mocha": "^3.4.2",
+    "typescript": "^2.4.1"
+  }
+}
